@@ -9,7 +9,9 @@
 
 const elementos = document.querySelectorAll(".reveal");
 
+
 const observer = new IntersectionObserver(
+
     (entradas) => {
 
         entradas.forEach((entrada) => {
@@ -27,7 +29,9 @@ const observer = new IntersectionObserver(
     {
         threshold: 0.15
     }
+
 );
+
 
 elementos.forEach((elemento) => {
 

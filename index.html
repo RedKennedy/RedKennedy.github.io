@@ -10,8 +10,17 @@
     <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Iconos -->
+    <link
         rel="stylesheet"
-    >
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Fuente -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS propio -->
     <link rel="stylesheet" href="style.css">
@@ -19,264 +28,638 @@
 
 <body>
 
-    <!-- ==========================
+    <!-- ==============================
          NAVBAR
-    =========================== -->
+    =============================== -->
 
-    <header>
-        <nav class="container">
-            <a href="#inicio">&lt;Scarlett /&gt;</a>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+                <span>&lt;</span> Scarlett <span>/&gt;</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estudios">Estudios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ==============================
+         INICIO
+    =============================== -->
+
+    <header id="inicio" class="hero">
+
+        <div class="hero-decoration decoration-one"></div>
+        <div class="hero-decoration decoration-two"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-7 hero-content reveal-left">
+
+                    <p class="small-title">
+                        HOLA, SOY
+                    </p>
+
+                    <h1>
+                        Scarlett <span>Castillo</span>
+                    </h1>
+
+                    <h2>
+                        Estudiante de
+                        <span>programación</span>
+                    </h2>
+
+                    <p class="hero-description">
+
+                        <!-- ESCRIBE AQUÍ TU DESCRIPCIÓN -->
+
+                        Soy una estudiante apasionada por la tecnología,
+                        la programacion y la creación de soluciones digitales.
+                        En mi tiempo libre estudio robotica ya que me apasiona muchisimo, hago puzzles y elaboro proyectos electronicos.
+                        En este espacio presento mis proyectos,
+                        habilidades y formación.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#proyectos" class="btn btn-red">
+                            Ver mis proyectos
+                            <i class="bi bi-arrow-down"></i>
+                        </a>
+
+                        <a href="#contacto" class="btn btn-outline-red">
+                            Contactarme
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5 text-center reveal-right">
+
+                    <div class="profile-wrapper">
+
+                        <div class="profile-ring"></div>
+
+                        <img
+                            src="img/foto-perfil.jpg"
+                            alt="Foto de perfil"
+                            class="profile-image">
+
+                        <div class="profile-heart">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            <span>SCROLL</span>
+
+            <i class="bi bi-chevron-down"></i>
+
+        </div>
+
     </header>
 
 
-    <!-- ==========================
-         INICIO
-    =========================== -->
+    <!-- ==============================
+         SOBRE MÍ
+    =============================== -->
 
-    <main>
+    <section id="sobre-mi" class="section">
 
-        <section id="inicio" class="container">
+        <div class="container">
 
-            <p>HOLA, SOY</p>
+            <div class="section-heading reveal">
 
-            <h1>Scarlett Castillo</h1>
+                <span>01</span>
 
-            <h2>Estudiante de programación</h2>
+                <div>
+                    <p>CONÓCEME</p>
+                    <h2>Sobre mí</h2>
+                </div>
 
-            <p>
-                Bienvenido/a a mi portafolio personal.
-                Aquí podrás conocer más sobre mí,
-                mis proyectos y mis habilidades.
-            </p>
-
-            <div>
-                <a href="#proyectos" class="btn btn-danger">
-                    Ver mis proyectos
-                </a>
-
-                <a href="#contacto" class="btn btn-outline-light">
-                    Contactarme
-                </a>
             </div>
 
-        </section>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7 reveal">
+
+                    <div class="about-text">
+
+                        <h3>
+                            Hola, soy
+                            <span>Scarlett</span>
+                        </h3>
+
+                        <p>
+                            <!-- ESCRIBE AQUÍ SOBRE TI -->
+
+                            Actualmente estudio
+                            <strong>programación</strong>
+                            en
+                            <strong>INTECO</strong>.
+                        </p>
+
+                        <p>
+
+                            Me interesa especialmente el área de
+                            <strong>la robotica, las paginas web y la programacion</strong>.
+
+                        </p>
+
+                        <p>
+
+                            Durante mi formación he desarrollado
+                            conocimientos en desarrollo web, base de datos,
+                            programación y diferentes herramientas
+                            tecnológicas.
+
+                        </p>
+
+                        <p>
+
+                            Mi objetivo profesional es seguir creciendo y adquirir conocimientos en el area de la tecnologia
+                            <strong></strong>.
+
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-        <!-- ==========================
-             SOBRE MÍ
-        =========================== -->
+                <div class="col-lg-5 reveal">
 
-        <section id="sobre-mi" class="container py-5">
+                    <div class="about-box">
 
-            <h2>Sobre mí</h2>
+                        <div class="about-box-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
 
-            <p>
-                Soy estudiante de programación y me interesa
-                aprender sobre tecnología, desarrollo web
-                y robótica.
-            </p>
+                        <h3>Lo que me apasiona</h3>
 
-        </section>
+                        <p>
+                            Diseño, tecnología, creatividad y
+                            aprendizaje continuo.
+                        </p>
+
+                    </div>
+
+                    <div class="about-box">
+
+                        <div class="about-box-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <h3>Mi meta</h3>
+
+                        <p>
+                            Seguir creciendo profesionalmente
+                            y participar en nuevos proyectos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-        <!-- ==========================
-             PROYECTOS
-        =========================== -->
+    <!-- ==============================
+         PROYECTOS
+    =============================== -->
 
-        <section id="proyectos" class="container py-5">
+    <section id="proyectos" class="section dark-section">
 
-            <div class="text-center mb-5">
+        <div class="container">
 
-                <p>03 — PROYECTOS</p>
+            <div class="section-heading reveal">
 
-                <h2>Mis proyectos</h2>
+                <span>02</span>
 
-                <p>
-                    Algunos de los proyectos que he desarrollado
-                    durante mi aprendizaje en programación.
-                </p>
+                <div>
+                    <p>MI TRABAJO</p>
+                    <h2>Mis proyectos</h2>
+                </div>
 
             </div>
 
 
             <div class="row g-4">
 
-                <!-- Proyecto 1 -->
 
-                <div class="col-md-6">
+                <!-- PROYECTO 1 -->
 
-                    <div class="card bg-dark text-white h-100 p-4">
+                <div class="col-md-6 col-lg-4 reveal">
 
-                        <div class="card-body">
+                    <article class="project-card">
 
-                            <h3 class="card-title">
-                                PURIKURA
-                            </h3>
+                        <div class="project-top">
 
-                            <p class="card-text">
-                                Página web desarrollada utilizando
-                                HTML, CSS y JavaScript.
-                            </p>
+                            <span>01</span>
 
-                            <div class="mb-3">
+                            <i class="bi bi-laptop"></i>
 
-                                <span class="badge bg-danger">
-                                    HTML
-                                </span>
+                        </div>
 
-                                <span class="badge bg-danger">
-                                    CSS
-                                </span>
+                        <h3>
+                            PURIKURA
+                        </h3>
 
-                                <span class="badge bg-danger">
-                                    JavaScript
-                                </span>
+                        <p>
 
+                            <!-- DESCRIPCIÓN DEL PROYECTO -->
+
+                            "Cabina de fotos" que permite a los usuarios tomar y personalizar sus imágenes, creando recuerdos únicos y creativos. 
+
+
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>Python</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a href="#" class="project-button">
+
+                            Ver proyecto
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <!-- PROYECTO 2 -->
+
+                <div class="col-md-6 col-lg-4 reveal">
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span>02</span>
+
+                        </div>
+
+                        <h3>
+                            JARDIN ROBOTICO
+                        </h3>
+
+                        <p>
+
+                            <!-- DESCRIPCIÓN -->
+
+                            Una area con varios animatronicos simulando a la naturaleza como libelulas,
+                            mariposas, un diente de leon y un hongo que cambiaba de color al tocarse.
+
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>Arduino</span>
+
+
+                        </div>
+
+                        <a href="#" class="project-button">
+
+                            Ver proyecto
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <!-- PROYECTO 3 -->
+
+                <div class="col-md-6 col-lg-4 reveal">
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span>03</span>
+
+
+                        </div>
+
+                        <h3>
+                          GARRA
+                        </h3>
+
+                        <p>
+
+                            <!-- DESCRIPCIÓN -->
+
+                            un dispositivo mecánico programable que permitio agarrar, 
+                            manipular y soltar objetos con precisión
+
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>Arduino</span>
+
+                        </div>
+
+                        <a href="#" class="project-button">
+
+                            Ver proyecto
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+                                <!-- PROYECTO 4 -->
+
+                <div class="col-md-6 col-lg-4 reveal">
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span>04</span>
+
+
+                        </div>
+
+                        <h3>
+                         EL CAMINO DE EVA
+                        </h3>
+
+                        <p>
+
+                            <!-- DESCRIPCIÓN -->
+
+                            Un proyecto creado en arte tecnologico creado para competir en
+                            On Stage, se creo un robot desde cero que seguia la linea, tenia sensor de 
+                            proximidad y una garra funcional, con el cual se contaba una historia.
+
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>C++</span>
+                            <span>Ganador tercer lugar en la nacional</span>
+
+                        </div>
+
+                        <a href="#" class="project-button">
+
+                            Ver proyecto
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         HABILIDADES
+    =============================== -->
+
+    <section id="habilidades" class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span>03</span>
+
+                <div>
+                    <p>LO QUE SÉ HACER</p>
+                    <h2>Mis habilidades</h2>
+                </div>
+
+            </div>
+
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-6 reveal">
+
+                    <h3 class="subheading">
+                        Habilidades técnicas
+                    </h3>
+
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>HTML</span>
+                            <strong>70%</strong>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <div
+                                class="skill-progress"
+                                style="width: 70%">
                             </div>
-
-                            <a href="#" class="btn btn-outline-light">
-                                Ver proyecto
-                            </a>
 
                         </div>
 
                     </div>
 
-                </div>
 
+                    <div class="skill">
 
-                <!-- Proyecto 2 -->
+                        <div class="skill-header">
 
-                <div class="col-md-6">
+                            <span>CSS</span>
+                            <strong>90%</strong>
 
-                    <div class="card bg-dark text-white h-100 p-4">
+                        </div>
 
-                        <div class="card-body">
+                        <div class="skill-bar">
 
-                            <h3 class="card-title">
-                                JARDÍN ROBÓTICO
-                            </h3>
-
-                            <p class="card-text">
-                                Proyecto relacionado con tecnología
-                                y robótica, utilizando herramientas
-                                de desarrollo web.
-                            </p>
-
-                            <div class="mb-3">
-
-                                <span class="badge bg-danger">
-                                    HTML
-                                </span>
-
-                                <span class="badge bg-danger">
-                                    CSS
-                                </span>
-
-                                <span class="badge bg-danger">
-                                    Bootstrap
-                                </span>
-
+                            <div
+                                class="skill-progress"
+                                style="width: 90%">
                             </div>
-
-                            <a href="#" class="btn btn-outline-light">
-                                Ver proyecto
-                            </a>
 
                         </div>
 
                     </div>
 
-                </div>
 
+                    <div class="skill">
 
-                <!-- Proyecto 3 -->
+                        <div class="skill-header">
 
-                <div class="col-md-6">
+                            <span>JavaScript</span>
+                            <strong>85%</strong>
 
-                    <div class="card bg-dark text-white h-100 p-4">
+                        </div>
 
-                        <div class="card-body">
+                        <div class="skill-bar">
 
-                            <h3 class="card-title">
-                                GARRA
-                            </h3>
-
-                            <p class="card-text">
-                                Proyecto enfocado en programación
-                                e interacción mediante JavaScript.
-                            </p>
-
-                            <div class="mb-3">
-
-                                <span class="badge bg-danger">
-                                    JavaScript
-                                </span>
-
-                                <span class="badge bg-danger">
-                                    Bootstrap
-                                </span>
-
+                            <div
+                                class="skill-progress"
+                                style="width: 85%">
                             </div>
-
-                            <a href="#" class="btn btn-outline-light">
-                                Ver proyecto
-                            </a>
 
                         </div>
 
                     </div>
 
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>SQL</span>
+                            <strong>85%</strong>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <div
+                                class="skill-progress"
+                                style="width: 85%">
+                            </div>
+
+                        </div>
+
+                    </div>
+   <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>Bootstrap</span>
+                            <strong>70%</strong>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <div
+                                class="skill-progress"
+                                style="width: 70%">
+                            </div>
                 </div>
 
 
-                <!-- Proyecto 4 -->
+                <div class="col-lg-6 reveal">
 
-                <div class="col-md-6">
+                    <h3 class="subheading">
+                        Habilidades personales
+                    </h3>
 
-                    <div class="card bg-dark text-white h-100 p-4">
+                    <div class="soft-skills">
 
-                        <div class="card-body">
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Trabajo en equipo
+                        </div>
 
-                            <h3 class="card-title">
-                                EL CAMINO DE EVA
-                            </h3>
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Responsabilidad
+                        </div>
 
-                            <p class="card-text">
-                                Proyecto web desarrollado como parte
-                                de mi aprendizaje en programación.
-                            </p>
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Creatividad
+                        </div>
 
-                            <div class="mb-3">
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Comunicación
+                        </div>
 
-                                <span class="badge bg-danger">
-                                    HTML
-                                </span>
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Organización
+                        </div>
 
-                                <span class="badge bg-danger">
-                                    CSS
-                                </span>
-
-                                <span class="badge bg-danger">
-                                    Bootstrap
-                                </span>
-
-                            </div>
-
-                            <a href="#" class="btn btn-outline-light">
-                                Ver proyecto
-                            </a>
-
+                        <div>
+                            <i class="bi bi-heart-fill"></i>
+                            Aprendizaje continuo
                         </div>
 
                     </div>
@@ -285,78 +668,379 @@
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- ==========================
-             HABILIDADES
-        =========================== -->
+    <!-- ==============================
+         ESTUDIOS
+    =============================== -->
 
-        <section id="habilidades" class="container py-5">
+    <section id="estudios" class="section dark-section">
 
-            <h2>Mis habilidades</h2>
+        <div class="container">
 
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Bootstrap</p>
+            <div class="section-heading reveal">
 
-        </section>
+                <span>04</span>
 
+                <div>
+                    <p>MI FORMACIÓN</p>
+                    <h2>Mis estudios</h2>
+                </div>
 
-        <!-- ==========================
-             ESTUDIOS
-        =========================== -->
-
-        <section id="estudios" class="container py-5">
-
-            <h2>Mis estudios</h2>
-
-            <p>
-                Enseñanza básica - Escuela España
-            </p>
-
-            <p>
-                Enseñanza media - INTECO
-            </p>
-
-        </section>
+            </div>
 
 
-        <!-- ==========================
-             CONTACTO
-        =========================== -->
-
-        <section id="contacto" class="container py-5">
-
-            <h2>Contacto</h2>
-
-            <p>
-                Puedes contactarme mediante mi correo
-                electrónico.
-            </p>
-
-        </section>
-
-    </main>
+            <div class="timeline">
 
 
-    <!-- FOOTER -->
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>2013 — 2022</span>
+
+                        <h3>
+                            Basica
+                        </h3>
+
+                        <h4>
+                            Escuela nuestro mundo <br>
+                            Escuela España
+                        </h4>
+
+                        <p>
+
+                            <!-- INFORMACIÓN -->
+
+                            Enseñanza que se priorizo en aprender
+                            lo basico de matematica, lenguaje, historia, etc.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-book-fill"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>2023 — Actualmente</span>
+
+                        <h3>
+                            ENSEÑANZA MEDIA
+                        </h3>
+
+                        <h4>
+                            INTECO
+                        </h4>
+
+                        <p>
+
+                            Enseñanza media tecnica con especialidad
+                            de programacion elegida.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>2024 - Actualmente</span>
+
+                        <h3>
+                            CURSO O CERTIFICACIÓN
+                        </h3>
+
+                        <h4>
+                            Mustakis
+                        </h4>
+
+                        <p>
+
+                            - Curso basico de python con instructoras de MIT. <br>
+                            - Curso basico de robotica. <br>
+                            - Curso medio de robotica. <br>
+                            - Club de arte y tecnologia. <br>
+                            - Club Rescue Line (Actualmente).
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         CONTACTO
+    =============================== -->
+
+    <section id="contacto" class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span>05</span>
+
+                <div>
+                    <p>HABLEMOS</p>
+                    <h2>Contacto</h2>
+                </div>
+
+            </div>
+
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-5 reveal">
+
+                    <h3 class="contact-title">
+                        ¡Me encantaría saber de ti!
+                    </h3>
+
+                    <p class="contact-description">
+
+                        Si quieres conocer más sobre mis proyectos
+                        o ponerte en contacto conmigo, puedes
+                        escribirme mediante este formulario.
+
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <span>EMAIL</span>
+
+                                <p>
+                                   s.castillomorales@intecorecoleta.cl
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <span>UBICACIÓN</span>
+
+                                <p>
+                                    Santiago, Chile
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-github"></i>
+                            </div>
+
+                            <div>
+
+                                <span>GITHUB</span>
+
+                                <p>
+                                    RedKennedy
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="#" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7 reveal">
+
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <label for="nombre">
+                                    Nombre
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    class="form-control"
+                                    placeholder="Tu nombre"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="tu@email.com"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <label for="asunto">
+                            Asunto
+                        </label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            class="form-control"
+                            placeholder="¿En qué puedo ayudarte?"
+                            required>
+
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            class="form-control"
+                            rows="6"
+                            placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-red">
+
+                            Enviar mensaje
+                            <i class="bi bi-send-fill"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
 
     <footer>
 
-        <p>
-            Scarlett Castillo
-        </p>
+        <div class="container text-center">
+
+            <div class="footer-logo">
+                SBCM
+            </div>
+
+            <p>
+                Diseñado y desarrollado por Scarlett
+            </p>
+
+            <p class="copyright">
+                © <span id="year"></span>
+                Scarlett. Todos los derechos reservados.
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- Bootstrap JavaScript -->
+    <!-- BOTÓN ARRIBA -->
+
+    <button id="backToTop" class="back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Bootstrap -->
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
+
 
     <!-- JavaScript propio -->
 
@@ -365,3 +1049,4 @@
 </body>
 
 </html>
+
