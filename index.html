@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mi Portafolio | Scarlett Castillo</title>
 
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <header>
-        <nav>
-            <a href="index.html">Scarlett</a>
+        <nav class="container">
+            <a href="#inicio">&lt;Scarlett /&gt;</a>
 
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -25,9 +35,12 @@
         </nav>
     </header>
 
+
+    <!-- INICIO -->
     <main>
 
-        <section id="inicio">
+        <section id="inicio" class="container">
+
             <p>HOLA, SOY</p>
 
             <h1>Scarlett Castillo</h1>
@@ -40,17 +53,123 @@
                 mis proyectos y mis habilidades.
             </p>
 
-            <a href="#proyectos">Ver mis proyectos</a>
-            <a href="#contacto">Contactarme</a>
+            <div>
+                <a href="#proyectos" class="btn btn-danger">
+                    Ver mis proyectos
+                </a>
+
+                <a href="#contacto" class="btn btn-outline-light">
+                    Contactarme
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="container py-5">
+
+            <h2>Sobre mí</h2>
+
+            <p>
+                Soy estudiante de programación y me interesa
+                aprender sobre tecnología, desarrollo web
+                y robótica.
+            </p>
+
+        </section>
+
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="container py-5">
+
+            <h2>Mis proyectos</h2>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-dark text-white p-3">
+                        <h3>PURIKURA</h3>
+                        <p>
+                            Proyecto desarrollado utilizando
+                            HTML, CSS y JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-dark text-white p-3">
+                        <h3>JARDÍN ROBÓTICO</h3>
+                        <p>
+                            Proyecto relacionado con tecnología
+                            y robótica.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="container py-5">
+
+            <h2>Mis habilidades</h2>
+
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Bootstrap</p>
+
+        </section>
+
+
+        <!-- ESTUDIOS -->
+        <section id="estudios" class="container py-5">
+
+            <h2>Mis estudios</h2>
+
+            <p>
+                Enseñanza básica - Escuela España
+            </p>
+
+            <p>
+                Enseñanza media - INTECO
+            </p>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="container py-5">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Puedes contactarme mediante mi correo
+                electrónico.
+            </p>
+
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
         <p>Scarlett Castillo</p>
     </footer>
 
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript propio -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
