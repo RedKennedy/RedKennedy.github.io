@@ -38,7 +38,7 @@ Entre los proyectos presentados en el portafolio se encuentran:
 
 El portafolio será publicado mediante GitHub Pages.
 
-**Enlace:** [Agregar aquí el enlace de GitHub Pages]
+**Enlace:** (https://redkennedy.github.io/)
 
 También es posible ejecutar el proyecto localmente:
 
